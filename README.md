@@ -3,7 +3,7 @@
 Dado un archivo conformado por un grupo de números se debecalcular la media y la desviación estándar mediate el uso de listas enlazadas y teniendo en cuenta que el tipo de los datos puede variar 
 
 
-### Prerequisites
+### Prerequisitos
 
 * Maven
 * IDE de Java
