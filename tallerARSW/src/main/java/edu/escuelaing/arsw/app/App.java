@@ -9,7 +9,7 @@ public class App {
 
     /**
      * Method responsible for printing the mean and standard deviation
-     *
+     *IT IS NOT ADDING THE NUMBERS TO THE LIST
      */
 
     public static void main( String[] args ) {
