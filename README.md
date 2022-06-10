@@ -13,8 +13,11 @@ Dado un archivo conformado por un grupo de números se debecalcular la media y l
 ### JAVADOC
 
 ![documentacion1](https://github.com/lrn000/Taller2/blob/main/tallerARSW/Imagenes/documentacion1.png)
+
 ![documentacion2](https://github.com/lrn000/Taller2/blob/main/tallerARSW/Imagenes/documentacion2.png)
+
 ![documentacion3](https://github.com/lrn000/Taller2/blob/main/tallerARSW/Imagenes/documentacion3.png)
+
 ![documentacion4](https://github.com/lrn000/Taller2/blob/main/tallerARSW/Imagenes/documentacion4.png)
 
 ## Autor
