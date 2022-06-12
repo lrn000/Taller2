@@ -7,14 +7,15 @@ public class LinkedList<E> implements  List<E>, Deque<E>, Cloneable, Serializabl
 
     private Node<E> root;
     private Node<E> tail;
+    private int size;
 
     /**
-     * Constructor de la clase
+     *  Constructor of the class LinkedList
      */
     public LinkedList() {
         root = null;
         tail = null;
-        int size = 0;
+        size = 0;
     }
 
     @Override
@@ -57,14 +58,20 @@ public class LinkedList<E> implements  List<E>, Deque<E>, Cloneable, Serializabl
         return null;
     }
 
+    /**
+     * Gets the first element.
+     */
     @Override
     public E getFirst() {
-        return null;
+        return root.getValue();
     }
 
+    /**
+     * Gets the last element.
+     */
     @Override
     public E getLast() {
-        return null;
+        return tail.getValue();
     }
 
     @Override
@@ -127,11 +134,19 @@ public class LinkedList<E> implements  List<E>, Deque<E>, Cloneable, Serializabl
         return null;
     }
 
+    /**
+     *  returns the size of the list
+     * @return the number of data contained in the list
+     */
     @Override
     public int size() {
-        return 0;
+        return size;
     }
 
+    /**
+     *  check if the list is empty
+     * @return true if root is null false if root is not null
+     */
     @Override
     public boolean isEmpty() {
         if (root == null) {
@@ -146,21 +161,25 @@ public class LinkedList<E> implements  List<E>, Deque<E>, Cloneable, Serializabl
         return false;
     }
 
+    /**
+     * returns an iterator over the elements of the list
+     * @return an iterator
+     */
     @Override
     public Iterator<E> iterator() {
         return new Iterator<E>() {
-            Node<E> actual = root;
+            Node<E> currentNode = root;
 
             @Override
             public boolean hasNext() {
-                return actual != null;
+                return currentNode != null;
             }
 
             @Override
             public E next() {
-                if (hasNext()) {
-                    E value = actual.getValue();
-                    actual = actual.getNext();
+                if(hasNext()) {
+                    E value = currentNode.getValue();
+                    currentNode = currentNode.getNext();
                     return value;
                 }
                 return null;
@@ -183,17 +202,23 @@ public class LinkedList<E> implements  List<E>, Deque<E>, Cloneable, Serializabl
         return null;
     }
 
+    /**
+     * Add data to the list
+     * @return true if root is null false if root is not null
+     */
     @Override
     public boolean add(E e) {
-        Node<E> nuevoNodo = new Node(e);
-        if (root == null) {
-            root = nuevoNodo;
-            nuevoNodo.setNext(null);
-            root = nuevoNodo;
+        Node<E> newNode = new Node(e);
+        if (isEmpty()) {
+            root = newNode;
+            newNode.setNext(null);
+            root = newNode;
+            size=1;
         } else {
-            tail.setNext(nuevoNodo);
+            tail.setNext(newNode);
+            size=size+1;
         }
-        tail = nuevoNodo;
+        tail = newNode;
         return true;
     }
 

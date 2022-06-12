@@ -9,26 +9,25 @@ public class App {
 
     /**
      * Method responsible for printing the mean and standard deviation
-     *IT IS NOT ADDING THE NUMBERS TO THE LIST
+     *
      */
 
     public static void main( String[] args ) {
 
-        File file = new File(args[0]);
-        //File file = new File("src/main/resources/Column2.txt");
-        LinkedList<Double> list = getDataFromFile(file);
-        System.out.println(list.size());
-        /*System.out.println(CentralizationDispersionMeasuresCalculator.calculateMean(list));
-        System.out.println(CentralizationDispersionMeasuresCalculator.standardDeviation(list));*/
+        File fileName = new File(args[0]);
+        LinkedList<Double> list = getDataFromFile(fileName);
+        System.out.println(CentralizationDispersionMeasuresCalculator.mean(list));
+        System.out.println(CentralizationDispersionMeasuresCalculator.standardDeviation(list));
     }
 
-    public static LinkedList<Double> getDataFromFile(File file){
+    public static LinkedList<Double> getDataFromFile(File fileName){
         LinkedList<Double> data = new LinkedList<Double>();
         try {
-            BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
+            FileReader fr = new FileReader(fileName);
+            BufferedReader bf = new BufferedReader(fr);
             String line;
             Double number;
-            while ((line = bufferedReader.readLine()) != null){
+            while ((line = bf.readLine()) != null){
                 number = Double.valueOf(line);
                 data.add(number);
             }
