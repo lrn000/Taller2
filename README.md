@@ -32,3 +32,7 @@ Laura Nathalia García
 ## Diagrama
 
 ![diagramaC2](https://github.com/lrn000/Taller2/blob/main/tallerARSW/Imagenes/diagramaC2.png)
+
+## Licencia
+
+[LICENCIA](http://www.gnu.org/licenses/gpl-3.0.html) 
