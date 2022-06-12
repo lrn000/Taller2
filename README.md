@@ -31,7 +31,7 @@ Laura Nathalia García
 
 ## Diagrama
 
-![diagramaC2](https://github.com/lrn000/Taller2/blob/main/tallerARSW/Imagenes/diagramaC2.png)
+Este proyecto cuenta con Licencia Pública General GNU ![diagramaC2](https://github.com/lrn000/Taller2/blob/main/tallerARSW/Imagenes/diagramaC2.png)
 
 ## Licencia
 
