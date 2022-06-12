@@ -8,7 +8,9 @@ Dado un archivo conformado por un grupo de números se debecalcular la media y l
 * Maven
 * IDE de Java
 
+### Pruebas
 
+![pruebas2.png](https://github.com/lrn000/Taller2/blob/main/tallerARSW/Imagenes/pruebas2.png)
 
 ### JAVADOC
 
